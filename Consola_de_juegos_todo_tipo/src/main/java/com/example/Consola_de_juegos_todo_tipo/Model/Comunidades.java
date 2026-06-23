@@ -5,23 +5,22 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Entity
-@Table(name = "Internet")
+@Table(name = "Comunidades")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Internet {
+public class Comunidades {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String tipo;
+    private Integer idJuego;
 
-    private String descripcion;
+    @Column(nullable = false)
+    private String nombre;
 
-    private String categoria;
+    private String idusuario;
 
-    private String estado;
 }

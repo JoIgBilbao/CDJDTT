@@ -5,23 +5,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Entity
-@Table(name = "Internet")
+@Table(name = "Billetera")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Internet {
+public class Billetera {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    private String tipo;
-
-    private String descripcion;
-
-    private String categoria;
-
-    private String estado;
+    private int saldo;
+    private Integer metodoPago;
+    private String tarjeta;
 }
