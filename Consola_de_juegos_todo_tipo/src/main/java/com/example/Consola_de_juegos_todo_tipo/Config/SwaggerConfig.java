@@ -12,8 +12,8 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API 2026 Reservas de consolas")
+                        .title("API 2026 Tienda de consolas")
                         .version("1.0")
-                        .description("Documentación de la API para el sistema de reserva de consolas"));
+                        .description("Documentación de la API para el sistema de Tienda de consolas"));
     }
 }
